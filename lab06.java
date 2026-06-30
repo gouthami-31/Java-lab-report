@@ -31,4 +31,18 @@ public class StudentPrinter {
     }
 }
 
+class Emp {
+    int empId; String name; double salary;
+    Emp(int empId, String name, double salary) {
+        this.empId = empId; this.name = name; this.salary = salary;
+    }
+}
+public class EmpInfo {
+    static void show(Emp e) {
+        System.out.printf("Emp[id=%d, name=%s, salary=%.2f]%n", e.empId, e.name, e.salary);
+    }
+    public static void main(String[] args) {
+        show(new Emp(1, "Kiran", 75000));
+    }
+}
 
